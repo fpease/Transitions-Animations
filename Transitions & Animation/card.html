@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .container{
+            position: relative;
+            width:400px;
+            height:400px;
+            left:float;
+            left:50px;
+            
+        }
+
+        .image{
+            position: absolute;
+            top:0;
+            width:100%;
+            height:100%;
+            transition-timing-function: all 0.5s ease;
+        }
+
+        .image img{
+            width:100%;
+            height:100%;
+        }
+
+        .container .image:hover{
+            width:100px;
+            height:100px;
+            left:350px;
+            top:150px;
+        
+            
+        }
+
+        .container .image:hover img{
+            border-radius: 50%;
+            
+        }
+
+        .content{
+            position: absolute;
+            background-color:cadetblue;
+            top:0;
+            width:100%;
+            height:100%;
+            z-index: -2;
+        }
+
+        #heading{
+            margin:0;
+            padding:50px;
+            text-align: center;
+            font-weight:40px;
+            font-size:24px;
+        }
+
+        #paragraph{
+            margin-left: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="images/girl.jpg" alt="stylish girl" />
+        </div>
+
+        <div class="content">
+            <h2 id="heading">Stylish Girl</h2>
+            <p id="paragraph">There are many variations of passages of Lorem Ipsum available.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

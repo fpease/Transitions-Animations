@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Animation</title>
+    <style>
+        .transform_animation1{
+            width:200px;
+            height:100px;
+            margin-top: 50px;
+            background-color: coral;
+        }
+
+        .transform_animation2{
+            width:200px;
+            height:100px;
+            margin-top: 50px;
+            background-color:cornflowerblue;
+        }
+
+        .transform_animation3{
+            width:200px;
+            height:100px;
+            margin-top: 50px;
+            background-color:crimson;
+        }
+
+        .transform_animation4{
+            width:200px;
+            height:100px;
+            margin-top: 50px;
+            background-color:darkolivegreen;
+        }
+
+        .transform_animation1:hover{
+            transform: translate(100px, 100px);
+        }
+
+        .transform_animation2:hover{
+            transform: scale(2,2);
+        }
+
+        .transform_animation3:hover{
+            transform: rotate(75deg);
+        }
+        
+        .transform_animation4:hover{
+            transform: skew(30deg, 30deg);
+            transition-timing-function: steps(4, jump-end);
+            transition-duration: 2s;
+        }
+
+        .transform_animation{
+            width:200px;
+            height:100px;
+            margin-top:50px;
+            background-color: gold;
+            animation-duration: 2s;
+            animation-name: skew_animation;
+        }
+
+        @keyframes skew_animation{
+            0%{
+                transform: skew(0deg);
+            }
+            25%{
+                transform:skew(30deg);
+            }
+            50%{
+                transform:skew(-30deg);
+            }
+            100%{
+                background-color: mediumpurple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <br>
+
+    <center>
+        <div class = "transform_animation1">
+
+        </div>
+
+        <div class ="transform_animation2"></div>
+
+        <div class="transform_animation3"></div>
+        <div class="transform_animation4"></div>
+        <div class="transform_animation"></div>
+    </center>
+</body>
+</html>

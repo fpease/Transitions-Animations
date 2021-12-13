@@ -1,0 +1,23 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.ball-container{
+    padding-top: 200px;
+}
+
+.ball img{
+    width:200px;
+    height:200px;
+    position: relative;
+    animation: ball 3s infinite;
+}
+
+@keyframes ball{
+    0%   {left:0px; top:0px;}
+    25%  {left:300px; top:0px;}
+    50%  {left:300px; top:300px;}
+    75%  {left:0px; top:300px;}
+    100% {left:0px; top:0px;}
+}
